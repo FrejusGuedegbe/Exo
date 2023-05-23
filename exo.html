@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo</title>
+</head>
+<body>
+    <script>
+        'Exo 1'
+            var age = prompt("Quel est votre âge ?");
+            if (age >= 18) {
+            alert("Vous êtes majeur.");
+            } else {
+            alert("Vous êtes mineur.");
+            }
+
+        'Exo 2'
+            var nbr1 = prompt("Entrer un nombre");
+            var nbr2 = prompt("Entrer un nombre");
+            if (nbr1>nbr2) {
+                alert("le plus grand nombre est " + nbr1);
+            } else {
+                alert("le plus grand nombre est " + nbr2);
+            }
+
+        'Exo 3'
+            var nbr = prompt("Entrer un nombre");
+            if (nbr<0) {
+                alert("le nombre est négatif ");
+            } else if((nbr>0)) {
+                alert("le nombre est positif");
+            } else{
+                alert("le nombre est null");
+            }
+
+         'Exo 4'
+            var nbr1 = prompt("Entrer un nombre");
+            var nbr2 = prompt("Entrer un nombre");
+            var nbr3 = prompt("Entrer un nombre");
+            var plusGrand = nbr1;
+            if (nbr2 > plusGrand) {
+                plusGrand = nbr2;
+            }
+            if (nbr3 > plusGrand) {
+                plusGrand = nbr3;
+            }
+            alert("le plus grand nombre est " + plusGrand);
+
+        'Exo 5'
+            var nbr = prompt("Entrer un nombre");
+            if (nbr % 2 === 0) {
+                alert("Le nombre est pair");
+            } else {
+                alert("Le nombre est pair");
+            }
+
+        'Exo 6 bizarre'
+                var caractere = prompt("Entrer un caractère");
+                if (caractere.length !== 1) {
+                    console.log("Veuillez entrer un seul caractère.");
+                } else {
+                    if (/[A-Z]/.test(caractere)) {
+                        console.log("Le caractère saisi est une lettre majuscule.");
+                    } else if (/[a-z]/.test(caractere)) {
+                        console.log("Le caractère saisi est une lettre minuscule.");
+                    } else if (/[0-9]/.test(caractere)) {
+                        console.log("Le caractère saisi est un chiffre.");
+                    } else {
+                        console.log("Le caractère saisi n'est ni une lettre majuscule, ni une lettre minuscule, ni un chiffre.");
+                    }
+                }
+
+        'Exo 7'
+            var nombre = prompt("Entrez un nombre entre 1 et 7 :");
+            switch (nombre) {
+                case 1:
+                    alert("Lundi");
+                    break;
+                case 2:
+                    alert("Mardi");
+                    break;
+                case 3:
+                    alert("Mercredi");
+                    break;
+                case 4:
+                    alert("Jeudi");
+                    break;
+                case 5:
+                    alert("Vendredi");
+                    break;
+                case 6:
+                    alert("Samedi");
+                    break;
+                case 7:
+                    alert("Dimanche");
+                    break;
+                default:
+                    alert("Le nombre saisi n'est pas valide.");
+                break;
+            }
+
+        'Exo 8'
+            var mois = prompt("Entrez un mois (entre 1 et 12) :");
+
+            switch (mois) {
+            case 1: // janvier
+            case 3: // mars
+            case 5: // mai
+            case 7: // juillet
+            case 8: // août
+            case 10: // octobre
+            case 12: // décembre
+                alert("Le mois compte 31 jours.");
+                break;
+            case 4: // avril
+            case 6: // juin
+            case 9: // septembre
+            case 11: // novembre
+            alert("Le mois compte 30 jours.");
+                break;
+            case 2: // février
+            alert("Le mois compte généralement 28 jours ou 29 jours.");
+                break;
+            default:
+            alert("Le mois saisi n'est pas valide.");
+                break;
+            }
+
+        'Exo 9'
+            var annee = parseInt(prompt("Entrez une année :"));
+
+            if (annee % 4 === 0 || annee % 400 === 0){
+                alert(annee + " est une année bissextile.");
+            } else {
+                alert(annee + " n'est pas une année bissextile.");
+            }
+
+        'Exo 10'
+            var nombre = parseInt(prompt("Entrez un nombre :"));
+
+            if (nombre % 3 === 0 && nombre % 5 === 0) {
+                alert( nombre + " est divisible par 3 et par 5.");
+            } else if ( nombre % 3 === 0) {
+                alert( nombre + " est divisible par 3 seulement.");
+            } else if ( nombre % 5 === 0) {
+                alert( nombre + " est divisible par 5 seulement.");
+            } else {
+                alert( nombre + " n'est divisible ni par 3 ni par 5.");
+            }
+
+    </script>
+</body>
+</html>
